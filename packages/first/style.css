@@ -1,0 +1,1386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(6, 6, 47);
+    color: white;
+}
+
+.invert {
+    /* filter: invert(1); */
+}
+
+.conatiner {}
+
+.flex {
+    display: flex;
+}
+
+.txt-black {
+    color: black;
+}
+
+.bg-black {
+    color: white;
+}
+
+.position {
+    position: fixed;
+}
+
+.m1 {
+    margin: 7px;
+}
+
+.p1 {
+    padding: 8px;
+}
+
+.height {
+    height: 170em;
+}
+
+.bg-gray {
+    background-color: #00042e;
+    color: white;
+}
+
+.header {
+    position: sticky;
+    height: 34px;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.width {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    right: 1.5rem;
+    text-decoration: none;
+}
+
+.header ul li {
+    list-style: none;
+    margin: 0 25px;
+    margin-top: 4px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.header ul li a {
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+}
+
+.header .name {
+    position: absolute;
+    left: 50px;
+    text-shadow: 3px 0px 3px BLACK;
+    color: rgb(250, 156, 4);
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+ul li a:hover {
+
+    text-shadow: 2px 0px 3px black;
+    color: rgb(250, 156, 4);
+}
+
+.left {
+    margin: 41px 100px;
+    width: 30vw;
+    height: 80vh;
+    font-size: 3rem;
+}
+
+.left .intro {
+    position: absolute;
+}
+
+.purple {
+    color: aqua;
+    font-family: 'Kanit', sans-serif;
+}
+
+#element {
+    color: aqua;
+    font-size: 2.5rem;
+    font: bold;
+    font-family: 'Kanit', sans-serif;
+}
+
+.button {
+    display: flex;
+    position: absolute;
+    left: 7vw;
+    top: 15rem;
+    padding: 23px;
+    text-decoration: none;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px solid rgb(255, 187, 0);
+    border-radius: 20px;
+    padding: 18px;
+    width: 12rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.btn:hover {
+    background-color: rgb(250, 156, 4);
+    border-color: rgb(250, 156, 4);
+    color: black;
+    transform: translateY(-10px);
+}
+
+.icons ul {
+    position: absolute;
+    display: flex;
+    list-style: none;
+}
+
+.icons ul li a img {
+    margin: 6vh 1vw;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.icons ul li a img:hover {
+    transform: translateX(-10px);
+}
+
+.about {
+    display: inline-block;
+    margin: 63% 54px;
+    font-family: poppins, sans-serif;
+}
+
+.heading {
+    margin: 34px auto;
+    font-size: 3em;
+    font-family: 'Salsa', cursive;
+}
+
+.para {
+    line-height: 1.3;
+    font-size: 23px;
+    overflow: hidden;
+}
+
+
+.specification {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.skills {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: azure;
+    cursor: pointer;
+    position: relative;
+}
+
+.skills::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.text-grap {
+    color: rgb(98, 98, 98);
+}
+
+
+.mybio {
+    height: 80vh;
+    margin: 90px 420px;
+}
+
+.mybio img {
+    margin: 72vh 0px;
+    position: absolute;
+    height: 100px;
+    width: 363px;
+}
+
+
+footer {
+    background-color: #0f1222;
+    height: 132px;
+}
+
+.footer {
+    display: flex;
+    margin: 23px 122px;
+}
+
+.right .img {
+    margin: 40px 0px;
+    position: absolute;
+    right: 10%;
+}
+
+.img>img {
+    border: 8px solid white;
+}
+
+.certi {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    position: absolute;
+    margin: 650px 525px;
+    left: 15px;
+
+}
+
+.certificates {
+    position: absolute;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    /* Distributes space evenly between items */
+    align-items: center;
+    /* Aligns items vertically in the center */
+    flex-wrap: wrap;
+    /* Allows items to wrap onto the next line if space runs out */
+    width: 100%;
+    /* Use the full width of the container */
+    margin: 20px 0;
+    /* Add some vertical margin */
+}
+
+.boxes {
+    background-color: #736d6d91;
+    padding: 25px;
+    border: 2px solid #736d6d91;
+    border-radius: 12px;
+    display: grid;
+    transition: background 0.5s, transform 0.4s ease-out;
+    margin: 780px 0;
+}
+
+.boxes:hover {
+    background: #fa9c04;
+    transform: translateY(-10px);
+    color: rgb(4, 4, 4);
+    font-weight: bold;
+}
+
+.boxes:hover p {
+    color: black;
+    font-weight: bold;
+}
+
+.boxes .one {
+    display: grid;
+    height: 40vh;
+    width: 25vw;
+    margin: 0 33px;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: 'Salsa', cursive;
+}
+
+.one p {
+    color: rgb(255, 187, 0);
+    font-size: 18px;
+    font-family: poppins, sans-serif;
+}
+
+.one h1 {
+    color: white;
+}
+
+.one a {
+    color: white;
+    text-decoration: none;
+}
+
+.projects {
+    display: grid;
+    grid-gap: 12px;
+}
+
+.actual ul {
+    margin: 190vh 0;
+    display: flex;
+    grid-gap: 45px;
+    position: absolute;
+    justify-content: space-between;
+    right: 6vw;
+    list-style: none;
+}
+
+.actual ul li>img {
+    display: grid;
+    width: 410px;
+    height: 270px;
+    border: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+.actual ul li a img{
+    display: grid;
+    width: 410px;
+    height: 270px;
+    border: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+.h1p {
+    font-size: 1em;
+    position: absolute;
+    margin: 170vh 33vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.actual img:hover {
+    background-color: rgb(255, 187, 0);
+    transform: translateX(-10px);
+}
+
+.contact {
+    position: absolute;
+    display: flex;
+    left: 10px;
+    font-size: 22px;
+    margin: 270vh 1px;
+}
+
+.contact ul li {
+    position: relative;
+    left: 40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    line-height: 4rem;
+}
+
+.contact ul li a {
+    display: flex;
+
+}
+
+.myself ul {
+    display: flex;
+    list-style: none;
+    /* margin: 320vh 0; */
+    gap: 25px;
+    left: 23px;
+}
+
+.myself ul li {
+    position: absolute;
+    right: 50px;
+    bottom: 25px;
+}
+
+.myself ul li a {
+    cursor: pointer;
+    transition: transform 0.7s ease-out;
+}
+
+.myself ul li a img:hover {
+    transform: translateY(-10px);
+}
+
+
+.resume {
+    display: flex;
+    position: absolute;
+    padding: 23px;
+    text-decoration: none;
+}
+
+.resume button {
+    position: absolute;
+    top: 138vw;
+    text-decoration: none;
+    background-color: #06062f;
+    color: white;
+    border: 1px solid #fa9c04;
+    border-radius: 20px;
+    padding: 18px;
+    width: 12rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.yes {
+    position: absolute;
+    bottom: 200px;
+    left: 41vw;
+    font-size: 48px;
+}
+
+.resume button:hover {
+    background-color: #fa9c04;
+    border-color: #fa9c04;
+    color: black;
+    transform: translateY(-10px);
+}
+
+.qna {
+    font-size: 45px;
+    display: grid;
+    grid-gap: 23px;
+    position: absolute;
+    top: 390vh;
+    right: 10vw;
+
+}
+
+form input,
+form textarea {
+    width: 97%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    margin-right: 220px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    resize: none;
+}
+
+form button {
+    margin: 23px 150px;
+    padding: 19px;
+    border: 1px solid #fa9c04;
+    border-radius: 14px;
+    background-color: #06062f;
+    color: white;
+    font-size: large;
+    font-family: 'Roboto Mono', monospace;
+    transition: transform 0.3s ease-out;
+
+}
+
+form button:hover {
+    background-color: #fa9c04;
+    border-color: #fa9c04;
+    color: black;
+    transform: translateY(-10px);
+}
+
+.button {
+    top: 24rem;
+    left: 0px;
+}
+
+.boxes {
+    background-color: #4f484866;
+}
+
+
+
+footer {
+    background-color: rgb(2, 2, 65);
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    right: 2px;
+    margin: 330vh 0px;
+    width: 109vw;
+    padding: 0px;
+    border: 0px solid white;
+    margin-left: 7px;
+    font-size: 26px;
+    font-family: monospace;
+}
+
+footer p {
+    position: relative;
+    top: 50px;
+}
+
+/* 
+::-webkit-scrollbar {
+    width: 12px;
+    border: 0px solid white;
+    border-radius: 23px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(250, 156, 4);
+    border:1px solid #1c1c1c;
+    scrollbar-width: thin;
+    border-radius: 12px;
+  } */
+body {
+    overflow-x: hidden;
+}
+
+* {
+    scrollbar-color: #0034d0 transparent;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+
+.intro {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(6, 6, 47);
+    color: white;
+    overflow-x: hidden;
+}
+
+.admin {
+    width: 24px;
+    height: 26px;
+    text-decoration: none;
+}
+
+:root {
+    --white: #fff;
+    --main-color: #F76188;
+}
+
+.col-md-3 ul {
+    display: flex;
+    gap: 4vw;
+    list-style: none;
+}
+
+.col-md-3 ul li {
+    width: 20vw;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 27px;
+}
+
+.demo {
+    background-color: #e7e7e7;
+}
+
+.serviceBox {
+    color: var(--main-color);
+    background: var(--white);
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 30px 30px;
+    border-bottom: 10px solid #090e6c;
+    position: relative;
+    box-shadow: rgb(30 30 108 / 25%) 0px 13px 27px -5px, rgb(0 5 158 / 30%) 0px 8px 16px -8px;
+    z-index: 1;
+    height: 42vh;
+}
+
+.inverted {
+    filter: invert(100%);
+    /* Inverts the colors completely */
+}
+
+.serviceBox:before {
+    content: "";
+    background: #060b64;
+    width: 100%;
+    height: 100px;
+    border-radius: 25px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.serviceBox .service-icon {
+    color: var(--white);
+    background: #060b64;
+    font-size: 40px;
+    line-height: 73px;
+    height: 58px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: rgb(30 30 108 / 25%) 0px 13px 27px -5px, rgb(0 5 158 / 30%) 0px 8px 16px -8px;
+    margin: 0 auto 20px;
+}
+
+.service-icon img {
+    width: 41px;
+    height: 41px;
+    left: 133px;
+    /* top: -169px; */
+    bottom: -41vh;
+}
+
+.serviceBox .title {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+}
+
+.serviceBox .description {
+    color: #444;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.serviceBox.pink {
+    --main-color: #ff70bc;
+}
+
+.serviceBox.green {
+    --main-color: #8bc920;
+}
+
+.serviceBox.purple {
+    --main-color: #6f6de0;
+}
+
+
+
+.col-md-3 {
+    display: flex;
+    width: 20vw;
+    position: absolute;
+    left: 45px;
+    top: 120%;
+
+}
+
+/* for small mobile phones or other devices*/
+@media only screen and (max-width:380px) {
+    .right .img {
+        position: absolute;
+        width: 65vw;
+        height: 49vh;
+        margin: 38px 24px
+    }
+
+    .img>img {
+        width: 62vw;
+    }
+
+    .header .name {
+        display: flex;
+        font-size: 30px;
+        left: 24px;
+    }
+
+    .left .intro {
+        width: 100%;
+        font-size: 31px;
+    }
+
+    .left .icons {
+        left: 85px;
+    }
+
+    .btn {
+        margin: -50px 78px;
+        bottom: 35px;
+        width: 9rem;
+        padding: 9px;
+    }
+
+    .col-md-3 {
+        top: 160%;
+    }
+
+    .serviceBox {
+        height: 38vh;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    .conatiner {
+        flex-direction: column-reverse;
+    }
+
+    .left .intro {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        top: 60vh;
+        left: 0px;
+    }
+
+    .left .icons {
+        position: absolute;
+        display: flex;
+        top: 25vh;
+    }
+
+    .btn {
+        position: absolute;
+        display: flex;
+    }
+
+    .mybio img {
+        left: 20px;
+        display: flex;
+        top: 67vh;
+        width: 250px;
+        height: 101px;
+    }
+
+    .col-md-3 ul {
+        display: grid;
+    }
+
+    .col-md-3 ul li {
+        width: 80vw;
+        padding: 20px 0;
+    }
+
+
+    .certi {
+        font-size: 2.5rem;
+        margin: 262vh 0;
+    }
+
+    .certificates {}
+
+    .boxes {
+        margin: 280vh 0;
+    }
+
+    .boxes .one {
+        width: 242px;
+        height: 300px;
+    }
+
+    .upper {
+        margin-top: -274vh;
+    }
+
+    .h1p {
+
+        margin: 396vh -55px;
+    }
+
+    .actual ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .actual ul li {
+        padding: 128px;
+        /* position: relative; */
+    }
+
+    .actual ul li a >img {
+        margin: 215vh 11px;
+        display: flex;
+        position: absolute;
+        right: -23px;
+        width: 94vw;
+    }
+    
+
+    .yes {
+        position: absolute;
+        top: 123vh;
+        left: 108px;
+    }
+
+    .contact {
+        left: -22px;
+        margin: 442vh 0px;
+    }
+
+    .contact ul li {
+        font-size: 15px;
+        top: 134vh;
+        line-height: 40px;
+    }
+
+    .contact ul li>img {
+        width: 30px;
+    }
+
+    .qna {
+        top: 713vh;
+        left: 8px;
+    }
+
+    footer {
+        margin: 652vh 0px;
+        /* position: fixed; */
+        left: -6px;
+    }
+
+    .resume button {
+        display: none;
+    }
+}
+
+/* for all mobile phones */
+@media only screen and (min-width:381px) and (max-width: 730px) {
+    .resume button {
+        display: flex;
+        top: 475vh;
+        width: 7rem;
+        font-size: 20px;
+        right: 25px;
+    }
+
+    .right .img {
+        position: absolute;
+        margin: 33px -20px;
+    }
+
+    .header .name {
+        display: flex;
+        font-size: 38px;
+        left: 12px;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    .conatiner {
+        flex-direction: column-reverse;
+    }
+
+    .left .intro {
+      
+        font-size: 40px;
+        display: flex;
+        width: 54% !important;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        top: 73vh;
+        left: 82px;
+    }
+
+    .left .icons {
+        position: absolute;
+        display: flex;
+        top: 31vh;
+        left: 5px;
+    }
+
+    .btn {
+        position: absolute;
+        display: flex;
+        margin: 18px 20px;
+        width: 10rem;
+    }
+
+    .mybio img {
+        left: 20px;
+        display: flex;
+        top: 67vh;
+        width: 250px;
+        height: 101px;
+    }
+
+    .col-md-3 {
+        top: 153%;
+    }
+
+    .col-md-3 ul {
+        display: grid;
+    }
+
+    .col-md-3 ul li {
+        width: 79vw;
+    }
+
+    .serviceBox {
+        height: 35vh;
+    }
+
+    .certi {
+        margin: 218vh 0;
+        font-size: 45px;
+    }
+
+    .certificates {
+        margin: 142px 0;
+    }
+
+    .boxes {
+        margin: 213vh 0;
+    }
+
+    .boxes .one {
+        width: 260px;
+        height: 300px;
+    }
+
+    .upper {
+        margin-top: -210vh;
+    }
+
+    .h1p {
+
+        margin: 321vh -10px;
+    }
+
+    .actual ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .actual ul li {
+        padding: 128px;
+        /* position: relative; */
+    }
+
+    .actual ul li>img {
+        margin: 130vh 11px;
+        display: flex;
+        position: absolute;
+        right: -23px;
+        width: 94vw;
+    }
+
+    .yes {
+        position: absolute;
+        left: 140px;
+        top: 80px;
+    }
+
+    .contact {
+        left: -22px;
+        margin: 442vh 0px;
+    }
+
+    .contact ul li {
+        font-size: 18px;
+        /* font-size: 15px; */
+        top: 22vh;
+        line-height: 40px;
+    }
+
+    .contact ul li>img {
+        width: 30px;
+    }
+
+    .qna {
+        top: 598vh;
+        left: 15px;
+    }
+
+    footer {
+        margin: 535vh 0px;
+        /* position: fixed; */
+        left: -13px;
+    }
+}
+
+/* for large mobile screen that is fold,small tabs etc. */
+@media only screen and (min-width:730px) and (max-width:800px) {
+
+    .resume button {
+        display: flex;
+        top: 475vh;
+        width: 7rem;
+        font-size: 20px;
+        right: 25px;
+    }
+
+    .right .img {
+        position: absolute;
+        margin: 11px 145px;
+    }
+
+    .header .name {
+        display: flex;
+        font-size: 38px;
+        left: 12px;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    .conatiner {
+        flex-direction: column-reverse;
+    }
+
+    .left .intro {
+        font-size: 40px;
+        display: flex;
+        width: 99% !important;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        top: 73vh;
+        left: -15px;
+    }
+
+    .left .icons {
+        position: absolute;
+        display: flex;
+        top: 25vh;
+        left: 33vw;
+    }
+
+    .btn {
+        position: absolute;
+        display: flex;
+        margin: 0px 283px;
+        width: 10rem;
+    }
+
+    .mybio img {
+        left: 20px;
+        display: flex;
+        top: 67vh;
+        width: 250px;
+        height: 101px;
+    }
+
+    .col-md-3 {
+        top: 153%;
+    }
+
+    .col-md-3 ul {
+        display: grid;
+    }
+
+    .col-md-3 ul li {
+        width: 79vw;
+    }
+
+    .serviceBox {
+        height: 35vh;
+    }
+
+    .certi {
+        margin: 218vh 0;
+        font-size: 45px;
+    }
+
+    .certificates {
+        margin: 142px 0;
+    }
+
+    .boxes {
+        margin: 221vh 1px;
+    }
+
+    .boxes .one {
+        width: 260px;
+        height: 300px;
+    }
+
+    .upper {
+        margin-top: 221vh;
+        margin-right: -31px;
+    }
+
+    .h1p {
+
+        margin: 321vh -10px;
+    }
+
+    .actual ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .actual ul li {
+        padding: 128px;
+        /* position: relative; */
+    }
+
+    .actual ul li>img {
+        margin: 130vh 11px;
+        display: flex;
+        position: absolute;
+        right: -23px;
+        width: 94vw;
+    }
+
+    .yes {
+        position: absolute;
+        left: 140px;
+        top: 80px;
+    }
+
+    .contact {
+        left: -22px;
+        margin: 442vh 0px;
+    }
+
+    .contact ul li {
+        font-size: 18px;
+        /* font-size: 15px; */
+        top: 22vh;
+        line-height: 40px;
+    }
+
+    .contact ul li>img {
+        width: 30px;
+    }
+
+    .qna {
+        top: 598vh;
+        left: 15px;
+    }
+
+    footer {
+        margin: 535vh 0px;
+        /* position: fixed; */
+        left: -13px;
+    }
+}
+
+@media only screen and (min-width:801px) and (max-width:1100px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .resume button {
+        display: flex;
+        top: 337vh;
+        width: 12rem;
+        font-size: 42px;
+        left: 110vw;
+    }
+
+    .right .img {
+        position: absolute;
+        margin: 80px;
+        left: 100vw;
+    }
+
+    .img>img {
+        width: 520px;
+    }
+
+    .header .name {
+        display: flex;
+        font-size: 38px;
+        left: 20px;
+    }
+
+    .header ul li {
+        margin: 0px 37px;
+        margin-top: 6px;
+        /* display: none; */
+    }
+
+    .header ul li a {
+        font-size: 29px;
+    }
+
+    .conatiner {
+        flex-direction: column-reverse;
+    }
+
+    .left .intro {
+        font-size: 50px;
+        display: flex;
+        width: 99%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        top: 20vh;
+        right: 14vw;
+    }
+
+    #element {
+        font-size: 61px;
+    }
+
+    .left .icons {
+        position: absolute;
+        display: flex;
+        top: 37vh;
+        left: 33vw;
+    }
+
+    .icons ul li img {
+        width: 70px;
+    }
+
+    .btn {
+        position: absolute;
+        display: flex;
+        margin: 50px 300px;
+        width: 10rem;
+    }
+
+    .mybio img {
+        left: 20px;
+        display: flex;
+        top: 52vh;
+        width: 250px;
+        height: 101px;
+    }
+
+    .col-md-3 {
+        top: 153%;
+    }
+
+    .col-md-3 ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* Creates four columns */
+        grid-gap: 10px;
+    }
+
+    .col-md-3 ul li {
+        width: 46vw;
+    }
+
+    .serviceBox {
+        height: 36vh;
+        right: 20px;
+    }
+
+    .certi {
+        margin: 104vh 70vw;
+        font-size: 45px;
+    }
+
+    .certificates {
+        top: 100px;
+    }
+
+    .boxes {
+        margin: 221vh 1px;
+    }
+
+    .boxes .one {
+        width: 400px;
+        height: 366px;
+    }
+
+    .upper {
+        margin-top: 221vh;
+        position: absolute;
+        left: 114vw;
+    }
+
+    .h1p {
+
+        margin: 205vh 65vw;
+    }
+form button{
+    margin: 23px 178px;
+    padding: 20px;
+    border: 1px solid #fa9c04;
+    border-radius: 14px;
+    background-color: #06062f;
+    color: white;
+    font-size: 35px;
+    font-family: 'Roboto Mono', monospace;
+    transition: transform 0.3s ease-out;
+}
+
+    .actual ul {
+        margin: 225vh 0;
+        display: flex;
+        grid-gap: 45px;
+        position: absolute;
+        justify-content: space-between;
+        left: 10vw;
+        list-style: none;
+    }
+
+    .actual ul li>img {
+        display: grid;
+        width: 472px;
+        height: 350px;
+        border: 1px solid black;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: transform 0.3s ease-out;
+    }
+
+    .yes {
+        position: absolute;
+        left: 86vw;
+        bottom: 161vh;
+    }
+
+    .contact {
+        left: -22px;
+        margin: 442vh 0px;
+    }
+
+    .contact ul li {
+        font-size: 37px;
+        /* font-size: 15px; */
+        bottom: 132vh;
+        left: 110vw;
+        line-height: 57px;
+    }
+
+    .contact ul li>img {
+        width: 80px;
+    }
+
+    .qna {
+        top: 422vh;
+        left: 80px;
+    }
+
+    .width {
+        width: 194%;
+        overflow-x: hidden;
+    }
+
+    footer {
+        margin: 418vh 95px;
+        /* position: fixed; */
+        width: 194vw;
+        height: 36vh;
+        left: -100px;
+    }
+    footer p{
+        position: relative;
+        top: 122px;
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width:1100px){
+
+}
+
+
